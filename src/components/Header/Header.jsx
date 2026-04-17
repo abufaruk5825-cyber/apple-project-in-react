@@ -10,6 +10,7 @@ import apple from "../../assets/hero_apple_intelligence_headline__d3q0g47xl682_l
 import mobile from "../../assets/promo_iphone_tradein__bugw15ka691e_large_2x.jpg";
 import card from "../../assets/card_logo.png";
 import link from "../../assets/hero_apple_watch_series_11__bdz1mml4dx6q_large_2x.jpg";
+import seid from "../../assets/iphone_17_pro__b6q7im87srv6_large_2x.jpg";
 function Header() {
   return (
     <>
@@ -142,13 +143,14 @@ function Header() {
         <button className="btn-00">learn more</button>
         <button className="btn-01">buy</button>
      </div>
-     {/* <img src={apple} alt="" style={{width:"400px" }} /> */}
+    
      </div>
    </section>
 
    
    <section className="app">
     <div className="app-1">
+
    <section className="app-2" style={{backgroundImage:`url(${link})`}}>
     <div className="app-3">
     <h2>The ultimate way to</h2>
@@ -159,6 +161,20 @@ function Header() {
     </div>
     </div>
    </section>
+
+
+    <section className="seya1" style={{backgroundImage:`url(${seid})`}}>
+        <div className="seya-1">
+           
+            <img 
+  src={apple} 
+  alt="" 
+  style={{ width: "300px" }} 
+  className="seya-11"
+/>
+        </div>
+        </section>
+
 
     </div>
    </section>
