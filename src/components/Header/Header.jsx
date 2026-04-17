@@ -5,6 +5,7 @@ import watchIcon from "../../assets/watch_logo_small_2x.png";
 import promoApple from "../../assets/promo_apple_card__5cm7draujpey_large_2x.jpg";
 import promo from "../../assets/hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg"
 import bestPromo from "../../assets/promo_apple_watch_unity__casvx9ysh1le_large_2x.jpg"
+import famouse from "../../assets/promo_airpods_4_avail__bl22kvpg6ez6_large_2x.jpg";
 function Header() {
   return (
     <>
@@ -112,6 +113,17 @@ function Header() {
 </div>
 </section>
 
+
+<section className="apple-s1">
+    <img src={famouse} alt="smart electronics" className="apple-s1-img" />
+    <div className="web">
+        <h1>smart electronics</h1>
+        <div className="butn-0">
+            <button className="cr7">learn more</button>
+            <button className="cr7-1">buy</button>
+        </div>
+    </div>
+</section>
 
 <section>
     <div className="gallery">

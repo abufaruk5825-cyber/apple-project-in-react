@@ -34,6 +34,7 @@ color: white;
     height: 80vh;
     background-position: center;
     padding: 50px;
+    margin: 0 0 14px 14px;
 
     
 }
@@ -169,7 +170,7 @@ font-size: 30px;
     background-size: cover;
     height: 100vh;
     width: 500px;
-    margin:20px 100px;
+    
     
    }
    .ipad-pro{
@@ -210,7 +211,7 @@ font-size: 30px;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    margin: 20px;
+    width: 500px;
 
 }
 .mac-book{
@@ -252,13 +253,13 @@ font-size: 30px;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    margin: 20px;
+    width: 500px;
 }
 .moder-watch{
     text-decoration: none;
     text-align: center;
     color: rgb(237, 229, 229);
-    padding: 30px;
+   
 }
 #learn-more-2{
     background-color: blue;
@@ -296,7 +297,7 @@ font-size: 30px;
  .gallery {
     display: flex;
     gap: 15px;
-    margin: 20px;
+    margin-bottom: 20px;
     
   }
   
@@ -342,7 +343,7 @@ font-size: 30px;
 
 .s{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     margin: 10px;
 }
 .column{
@@ -362,4 +363,66 @@ justify-content: space-between;
 h5:hover{
    background-color: chartreuse;
    
+}
+.apple-s1 img{ 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+   
+
+}
+.apple-s1{
+    position: relative;
+    overflow: hidden;
+     padding: 5px 10px 10px ;
+}
+
+.web {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+     padding: 5px 10px 10px 10px;
+}
+
+.web h1 {
+    color: white;
+    
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+.cr7{
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: blue;
+    font-size: 20px;
+}
+.cr7-1{
+    border-radius: 20px;
+    width: 100px;
+    height: 49px;
+    background-color: #a894a6;
+    font-size: 20px;
+}
+
+
+.butn-0 {
+    display: flex;  
+    gap: 20px;
+    justify-content: center;
+}
+.cr7:hover{
+    background-color: darkgray;
+}
+.cr7:active{
+    background-color: darkgray;
+}
+.cr7-1:hover{
+    background-color: rgb(10, 161, 237);
 }
