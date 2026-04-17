@@ -129,6 +129,8 @@ font-size: 30px;
     background-size: cover;
     height: 70vh;
     margin: 10px;
+    margin-bottom: 26px;
+    
 }
 .time{
     text-align: center;
@@ -162,16 +164,18 @@ font-size: 30px;
 .time h3{
     font-size: 24px;
 }
-
+.s{
+    display: flex;
+    gap: 13px;
+    margin: 10px 10px 10px 10px;
+   
+}
    .container{
-    background: url(./promo_apple_card__5cm7draujpey_large_2x\ \(3\).jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 500px;
-    
-    
+    height: 90vh;
+     flex: 1; 
    }
    .ipad-pro{
     text-decoration: none;
@@ -206,13 +210,12 @@ font-size: 30px;
     background-color: aliceblue;
 }
 .container-1{
-    background: url("./hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 500px;
-
+    height: 90vh;
+    flex: 1; 
+   
 }
 .mac-book{
     text-decoration: none;
@@ -248,17 +251,17 @@ font-size: 30px;
 }
 
 .container-2{
-    background: url("./promo_iphone_tradein__bugw15ka691e_large_2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    width: 500px;
+    height: 90vh;
+     flex: 1; 
 }
 .moder-watch{
     text-decoration: none;
     text-align: center;
-    color: rgb(237, 229, 229);
+    color: rgb(235, 230, 230);
+    padding-top: 43px;
    
 }
 #learn-more-2{
@@ -341,11 +344,6 @@ font-size: 30px;
     opacity: 76;
   }
 
-.s{
-    display: flex;
-    gap: 15px;
-    margin: 10px;
-}
 .column{
     display: flex;
     text-decoration: none;
