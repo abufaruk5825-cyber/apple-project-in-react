@@ -6,6 +6,8 @@ import promoApple from "../../assets/promo_apple_card__5cm7draujpey_large_2x.jpg
 import promo from "../../assets/hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg"
 import bestPromo from "../../assets/promo_apple_watch_unity__casvx9ysh1le_large_2x.jpg"
 import famouse from "../../assets/promo_airpods_4_avail__bl22kvpg6ez6_large_2x.jpg";
+import apple from "../../assets/hero_apple_intelligence_headline__d3q0g47xl682_large_2x.png";
+import mobile from "../../assets/promo_iphone_tradein__bugw15ka691e_large_2x.jpg";
 function Header() {
   return (
     <>
@@ -124,6 +126,18 @@ function Header() {
         </div>
     </div>
 </section>
+   
+
+   <section className="post" style={{backgroundImage:`url(${mobile})`}}>
+     <div className="list">
+        <div><h1 style={{fontSize:"43px" ,paddingBottom:"12px"}}>smart apple intelligence</h1></div>
+     <div>
+        <button className="btn-00">learn more</button>
+        <button className="btn-01">buy</button>
+     </div>
+     {/* <img src={apple} alt="" /> */}
+     </div>
+   </section>
 
 <section>
     <div className="gallery">
@@ -140,9 +154,6 @@ function Header() {
 
   </div>
 </section> 
-
-
-
    </>
    
   );
