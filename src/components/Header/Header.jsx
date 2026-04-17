@@ -8,6 +8,8 @@ import bestPromo from "../../assets/promo_apple_watch_unity__casvx9ysh1le_large_
 import famouse from "../../assets/promo_airpods_4_avail__bl22kvpg6ez6_large_2x.jpg";
 import apple from "../../assets/hero_apple_intelligence_headline__d3q0g47xl682_large_2x.png";
 import mobile from "../../assets/promo_iphone_tradein__bugw15ka691e_large_2x.jpg";
+import card from "../../assets/card_logo.png";
+import link from "../../assets/hero_apple_watch_series_11__bdz1mml4dx6q_large_2x.jpg";
 function Header() {
   return (
     <>
@@ -81,6 +83,7 @@ function Header() {
     <div className="s">
 <section className="container" style={{backgroundImage:`url(${promoApple})`}}>
     <div className="ipad-pro">
+        <img src={card} alt=""style={{width:"90px"}} />
       <div><h1>iphone best</h1></div>  
     <div><h2>incredibly power full</h2></div>
     <div>
@@ -141,6 +144,23 @@ function Header() {
      </div>
      {/* <img src={apple} alt="" style={{width:"400px" }} /> */}
      </div>
+   </section>
+
+   
+   <section className="app">
+    <div className="app-1">
+   <section className="app-2" style={{backgroundImage:`url(${link})`}}>
+    <div className="app-3">
+    <h2>The ultimate way to</h2>
+    <h2>watch your health</h2>
+    <div>
+        <button className="btn-s" >learn more</button>
+        <button className="btn-z" >buy</button>
+    </div>
+    </div>
+   </section>
+
+    </div>
    </section>
 
 <section>
