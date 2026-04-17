@@ -130,13 +130,16 @@ function Header() {
 
    <section className="post" style={{backgroundImage:`url(${mobile})`}}>
      <div className="list">
-        
-        <div><h1 style={{fontSize:"43px" ,paddingBottom:"12px"}}>smart apple intelligence</h1></div>
-     <div>
-        <img src={apple} alt="" style={{paddingBottom:"300px"}} />
+        <div style={{display:"flex", justifyContent:"center"}}><i class="fa-brands fa-apple" style={{fontSize:"30px"}}></i><h1>Trade In</h1></div>
+        <div><div><h3>Get upto $195-$685</h3></div>
+           <div><h3> in credit when you trade in</h3></div>
+          <div><h3> iphone 13 or higher.</h3></div></div>
+         
+     <div style={{padding:"20px 0 0 0"}}>
         <button className="btn-00">learn more</button>
         <button className="btn-01">buy</button>
      </div>
+     {/* <img src={apple} alt="" style={{width:"400px" }} /> */}
      </div>
    </section>
 
