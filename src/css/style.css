@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgba(69, 69, 69,0.95);
+    padding: 10px;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+     
+
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+}
+.middle{
+text-align: center;
+color: white; 
+}
+.iphone{
+    background: url("./iphon16pro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+    padding: 50px;
+
+    
+}
+.iphone h1{
+    font-size: 60px;
+}
+.iphone h2{
+    padding: 10px;
+    font-size: 30px;
+}
+  .btn {
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius:80px;
+    width: 250px;
+    height: 90px;
+    padding: 5px;
+    border: 2px solid;
+
+  }
+  .buy{
+    background-color: rgb(94, 89, 89);
+    color: white;
+    font-size: 18px;
+    border-radius: 60px;
+    width:150px ;
+    height: 80px;
+    padding: 5px;
+    margin: 25px;
+    border: 2px solid;
+
+  }
+  .btn:hover {
+    background-color: rgb(110, 106, 106);
+border: 2px solid;
+
+  }
+.buy:hover{
+    
+border: 2px solid;
+background-color: blue;
+} 
+
+.iphone-16{
+    background: url("./iphone16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 80px;
+    margin: 15px;
+}
+.center{
+    text-align: center;
+    color: white;
+}
+.center h1{
+font-size: 60px;
+}
+.center h2{
+font-size: 30px;
+}
+#learn{
+    border-radius: 80px;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid;
+    border-color: blueviolet;
+}
+#buy{
+    border-radius: 50px;
+    font-size: 16px;
+    width: 120px;
+    height: 80px;
+    margin: 20px;
+}
+#learn:hover{
+    background-color: rgb(87, 86, 84);
+}
+#buy:hover{
+    border: 2px solid;
+    background-color: rgb(198, 122, 29);
+}
+.watch{
+    background: url("./watch_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    margin: 10px;
+}
+.time{
+    text-align: center;
+    padding: 28px;
+}
+.learn-more{
+    background-color: blue;
+    border: solid 2px;
+    border-radius: 45px;
+    width: 160px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.learn-more:hover{
+    background-color: rgb(195, 243, 4);
+}
+.buy-1{
+    font-size: 20px;
+    border-radius: 45px;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(164, 132, 92);
+    
+}
+
+
+.buy-1:hover{
+    background-color: aliceblue;
+}
+.time h3{
+    font-size: 24px;
+}
+
+   .container{
+    background: url(./promo_apple_card__5cm7draujpey_large_2x\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 500px;
+    margin:20px 100px;
+    
+   }
+   .ipad-pro{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    padding: 30px;
+   }
+   .ipad-pro h2{
+    padding: 10px;
+   }
+ #learn-more{
+    background-color: blue;
+    border: solid 2px;
+    border-radius: 45px;
+    width: 160px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ #learn-more:hover{
+    background-color: yellow;
+ }
+ #buy-1{
+    font-size: 20px;
+    border-radius: 45px;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(164, 132, 92);
+    margin-left: 10px;
+}
+#buy-1:hover{
+    background-color: aliceblue;
+}
+.container-1{
+    background: url("./hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 20px;
+
+}
+.mac-book{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    padding: 30px;
+   }
+   .mac-book h2{
+    padding: 10px;
+}
+#learn-more-1{
+    background-color: blue;
+    border: solid 2px;
+    border-radius: 45px;
+    width: 160px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ #learn-more-1:hover{
+    background-color: yellow;
+}
+#buy-2{
+    font-size: 20px;
+    border-radius: 45px;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(164, 132, 92);
+    margin-left: 10px;
+}
+#buy-2:hover{
+    background-color: aliceblue;
+}
+
+.container-2{
+    background: url("./promo_apple_watch_unity__casvx9ysh1le_large_2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 20px;
+}
+.moder-watch{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(237, 229, 229);
+    padding: 30px;
+}
+#learn-more-2{
+    background-color: blue;
+    border: solid 2px;
+    border-radius: 45px;
+    width: 160px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#learn-more-2:hover{
+    background-color: aqua;
+}
+#buy-3{
+    font-size: 20px;
+    border-radius: 45px;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(164, 132, 92);
+    margin-left: 10px;
+}
+.shop{
+    text-decoration: none;
+}
+.shop:hover{
+    text-decoration: underline;
+}
+.para-1{
+    padding: 10px;
+    font-size: 19px;
+}
+#buy-3:hover{
+    background-color: rgb(24, 125, 213);
+}
+ .gallery {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    
+  }
+  
+  .gallery-item {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    height: 400px;
+  }
+  
+  
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    padding: 20px;
+    margin: 0%;
+  }
+  
+  .gallery-item:hover .gallery-img {
+    transform: scale(1.4) rotate(2deg);
+    filter: brightness(1.1) saturate(1.2);
+  }
+  
+  .gallery-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+  }
+  
+   .gallery-item:hover::after {
+    opacity: 76;
+  }
+
+.s{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+.column{
+    display: flex;
+    text-decoration: none;
+    gap: 80px;
+
+}
+.column ul li{
+    list-style: none;
+justify-content: space-between;
+
+}
+.column ul li:hover{
+    background-color: burlywood;
+}
+h5:hover{
+   background-color: chartreuse;
+   
+}
