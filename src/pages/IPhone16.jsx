@@ -6,7 +6,7 @@ function IPhone16() {
   return (
     <div className="detail-page">
       <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
-      <div className="detail-hero" style={{ backgroundImage: `url(${iphone16})` }}>
+      <div className="detail-hero" style={{ backgroundImage: `url(${iphone16})`,margin:"0 10px 0 10px"  }}>
         <h1>iPhone 16</h1>
         <p>Hello, Apple Intelligence</p>
       </div>

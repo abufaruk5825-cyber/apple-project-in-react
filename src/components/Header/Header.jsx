@@ -70,8 +70,8 @@ function Header() {
       <div><h1>iphone best</h1></div>  
     <div><h2>incredibly power full</h2></div>
     <div>
-        <button id="learn-more" onClick={() => navigate("/iphone16pro")}>learn more</button>
-        <button id="buy-1" onClick={() => navigate("/buy", { state: { productKey: "iphone16pro" } })}>buy</button>
+        <button id="learn-more" onClick={() => navigate("/iphonebest")}>learn more</button>
+        <button id="buy-1" onClick={() => navigate("/buy", { state: { productKey: "iphonebest" } })}>buy</button>
     </div>
     </div>
 </section>
@@ -92,8 +92,8 @@ function Header() {
       <div><h1>modern watch</h1></div>  
     <div><h2>samart time count</h2></div>
     <div>
-        <button id="learn-more-2" onClick={() => navigate("/applewatch")}>learn more</button>
-        <button id="buy-3" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
+        <button id="learn-more-2" onClick={() => navigate("/modernwatch")}>learn more</button>
+        <button id="buy-3" onClick={() => navigate("/buy", { state: { productKey: "modernwatch" } })}>buy</button>
     </div>
     </div>
 </section>
@@ -107,8 +107,8 @@ function Header() {
     <div className="web">
         <h1>smart electronics</h1>
         <div className="butn-0">
-            <button className="cr7" onClick={() => navigate("/iphone16")}>learn more</button>
-            <button className="cr7-1" onClick={() => navigate("/buy", { state: { productKey: "iphone16" } })}>buy</button>
+            <button className="cr7" onClick={() => navigate("/smartelectronics")}>learn more</button>
+            <button className="cr7-1" onClick={() => navigate("/buy", { state: { productKey: "smartelectronics" } })}>buy</button>
         </div>
     </div>
 </section>
@@ -138,13 +138,11 @@ function Header() {
     <h2>The ultimate way to</h2>
     <h2>watch your health</h2>
     <div>
-        <button className="btn-s" onClick={() => navigate("/applewatch")}>learn more</button>
+        <button className="btn-s" onClick={() => navigate("/watchhealth")}>learn more</button>
         <button className="btn-z" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
     </div>
     </div>
    </section>
-
-
     <section className="seya1" style={{backgroundImage:`url(${seid})`}}>
         <div className="seya-1">
            

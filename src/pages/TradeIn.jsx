@@ -6,7 +6,7 @@ function TradeIn() {
   return (
     <div className="detail-page">
       <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
-      <div className="detail-hero" style={{ backgroundImage: `url(${mobile})` }}>
+      <div className="detail-hero" style={{ backgroundImage: `url(${mobile})`,margin:"0 10px 0 10px"  }}>
         <h1>Trade In</h1>
         <p>Get upto $195–$685 in credit</p>
       </div>

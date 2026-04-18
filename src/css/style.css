@@ -357,3 +357,7 @@ h5:hover { background-color: chartreuse; }
 .dark-mode .checkout-summary-grand { color: #f0f0f0; }
 .dark-mode .checkout-radio-card { border-color: #333; }
 .dark-mode .checkout-radio-card.selected { background-color: #1a2a3a; border-color: #0071e3; }
+
+.detail-hero{
+    height: 600px;
+}
