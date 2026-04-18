@@ -4,7 +4,13 @@ function Footer() {
   return (
     <div>
     <footer style={{marginLeft:"20px"}}>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut repellendus magnam dolore amet maxime eos ad facere aliquid, et consectetur sequi exercitationem eligendi laudantium itaque rem aperiam neque commodi unde perferendis voluptatibus veniam minima iste architecto! Tenetur voluptates praesentium natus voluptatum. Quaerat, fugit perferendis amet autem, officiis, architecto quis neque delectus quasi minima in. Veniam, nesciunt autem. Sunt numquam hic molestiae rerum minima ex deserunt impedit eaque, neque sed error ducimus cupiditate reiciendis, dolorum adipisci consequuntur dicta iure sint, autem commodi facere accusantium! Ullam consequatur cum provident facilis necessitatibus. Cupiditate vel placeat, dolore aperiam reprehenderit aliquid doloremque enim. Dolorem.</p>
+    <p>“A modern Apple-inspired website built with React. It features a clean UI, smart  design, and detailed product showcase sections. The project focuses on  performance, simplicity, and a premium user experience similar to Apple Inc.’s official  website.”
+          Navigation bar with Apple-style links and icons
+          Multiple hero sections with background images (iPhone 16 Pro, iPhone 16, Apple Watch,    MacBook, etc.)
+      3-column promo section with flex layout
+       Gallery section with hover zoom effects
+       Footer component separated from Header
+       Images imported correctly via Vite asset system</p>
 </footer>
 <br/><br/>
 
