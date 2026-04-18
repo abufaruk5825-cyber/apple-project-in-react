@@ -5,6 +5,7 @@ import { CartProvider } from "./context/CartContext";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Header/footer/Footer.jsx";
 import IPhone16Pro from "./pages/IPhone16Pro.jsx";
+import IPhone17Pro from "./pages/IPhone17Pro.jsx";
 import IPhoneBest from "./pages/IPhoneBest.jsx";
 import IPhone16 from "./pages/IPhone16.jsx";
 import AppleWatch from "./pages/AppleWatch.jsx";
@@ -35,6 +36,7 @@ function App() {
             <Routes>
               <Route path="/" element={<><Header /><Footer /></>} />
               <Route path="/iphone16pro" element={<IPhone16Pro />} />
+              <Route path="/iphone17pro" element={<IPhone17Pro />} />
               <Route path="/iphonebest" element={<IPhoneBest />} />
               <Route path="/iphone16" element={<IPhone16 />} />
               <Route path="/applewatch" element={<AppleWatch />} />

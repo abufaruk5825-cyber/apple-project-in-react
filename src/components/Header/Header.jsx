@@ -145,13 +145,11 @@ function Header() {
    </section>
     <section className="seya1" style={{backgroundImage:`url(${seid})`}}>
         <div className="seya-1">
-           
-            <img 
-  src={apple} 
-  alt="" 
-  style={{ width: "300px" }} 
-  className="seya-11"
-/>
+            <div className="seya-btns">
+              <button className="btn-s0" onClick={() => navigate("/iphone17pro")} style={{marginTop:"5px" , backgroundColor:"blue"}}>learn more</button>
+              <button className="btn-z0" onClick={() => navigate("/buy", { state: { productKey: "iphone17pro" } })} style={{marginLeft:"12px"}}>buy</button>
+              <h1>iphone 17 pro</h1>
+            </div>
         </div>
         </section>
 

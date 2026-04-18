@@ -167,7 +167,7 @@ h5:hover { background-color: chartreuse; }
 }
 
 /* Buy — filled dark */
-.buy, .buy-1, #buy, #buy-1, #buy-2, #buy-3, .cr7-1, .btn-01, .btn-z {
+.buy, .buy-1, #buy, #buy-1, #buy-2, #buy-3, .cr7-1, .btn-01, .btn-z ,  .btn-z0, .btn-s0{
   background-color: #1c1c1e; color: white; border: none;
   border-radius: 980px; padding: 10px 22px; font-size: 16px; font-weight: 600;
   cursor: pointer; transition: background-color 0.2s; width: auto; height: auto;
@@ -184,8 +184,8 @@ h5:hover { background-color: chartreuse; }
 #buy-3:hover  { background-color: #f77f00; }   /* promo watch         — orange  */
 .cr7-1:hover  { background-color: #0096c7; }   /* smart electronics   — cyan    */
 .btn-01:hover { background-color: #7209b7; }   /* trade in            — purple  */
-.btn-z:hover  { background-color: #e63946; }   /* health watch        — red     */
-
+.btn-z:hover  { background-color: #e3e639; }   /* health watch        — red     */
+.btn-z0:hover {background-color: cornflowerblue;}
 /* ===== Back Button ===== */
 .back-btn {
   margin: 20px; padding: 10px 20px; background-color: #0071e3;
@@ -360,4 +360,7 @@ h5:hover { background-color: chartreuse; }
 
 .detail-hero{
     height: 600px;
+}
+.seya-btns{
+  gap: 12px;
 }

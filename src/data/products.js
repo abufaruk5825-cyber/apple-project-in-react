@@ -1,5 +1,6 @@
 import iphon16pro from "../assets/iphon16pro.jpg";
 import iphone16 from "../assets/iphone16.jpg";
+import iphone17pro from "../assets/iphone_17_pro__b6q7im87srv6_large_2x.jpg";
 import watch from "../assets/watch_hero.jpg";
 import watchHealth from "../assets/hero_apple_watch_series_11__bdz1mml4dx6q_large_2x.jpg";
 import macbook from "../assets/hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg";
@@ -20,6 +21,20 @@ export const products = {
       { name: "White Titanium", hex: "#f5f5f0" },
       { name: "Natural Titanium", hex: "#c8b89a" },
       { name: "Desert Titanium", hex: "#c4a882" },
+    ],
+  },
+  iphone17pro: {
+    name: "iPhone 17 Pro",
+    image: iphone17pro,
+    basePrice: 1099,
+    storages: ["256GB", "512GB", "1TB"],
+    prices: { "256GB": 1099, "512GB": 1299, "1TB": 1499 },
+    colors: [
+      { name: "Black Titanium", hex: "#2c2c2e" },
+      { name: "White Titanium", hex: "#f5f5f0" },
+      { name: "Natural Titanium", hex: "#c8b89a" },
+      { name: "Desert Titanium", hex: "#c4a882" },
+      { name: "Orange Titanium", hex: "#c8622a" },
     ],
   },
   iphone16: {
@@ -69,8 +84,14 @@ export const products = {
   tradein: {
     name: "iPhone Trade In",
     image: mobile,
-    basePrice: 0,
-    storages: [],
+    basePrice: 685,
+    storages: ["iPhone 13 — up to $195", "iPhone 14 — up to $350", "iPhone 15 — up to $530", "iPhone 16 — up to $685"],
+    prices: {
+      "iPhone 13 — up to $195": 195,
+      "iPhone 14 — up to $350": 350,
+      "iPhone 15 — up to $530": 530,
+      "iPhone 16 — up to $685": 685,
+    },
     colors: [],
   },
   iphonebest: {
