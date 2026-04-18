@@ -139,7 +139,7 @@ function Header() {
     <h2>watch your health</h2>
     <div>
         <button className="btn-s" onClick={() => navigate("/watchhealth")}>learn more</button>
-        <button className="btn-z" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
+        <button className="btn-z" onClick={() => navigate("/buy", { state: { productKey: "watchhealth" } })}>buy</button>
     </div>
     </div>
    </section>

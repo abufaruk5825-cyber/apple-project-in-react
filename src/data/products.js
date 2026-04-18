@@ -1,6 +1,7 @@
 import iphon16pro from "../assets/iphon16pro.jpg";
 import iphone16 from "../assets/iphone16.jpg";
 import watch from "../assets/watch_hero.jpg";
+import watchHealth from "../assets/hero_apple_watch_series_11__bdz1mml4dx6q_large_2x.jpg";
 import macbook from "../assets/hero_macbook_air_m3__cp4t7pn8zqaa_small_2x.jpg";
 import mobile from "../assets/promo_iphone_tradein__bugw15ka691e_large_2x.jpg";
 import promoApple from "../assets/promo_apple_card__5cm7draujpey_large_2x.jpg";
@@ -106,6 +107,19 @@ export const products = {
     prices: { "Standard": 129, "With Active Noise Cancellation": 179 },
     colors: [
       { name: "White", hex: "#f5f5f7" },
+    ],
+  },
+  watchhealth: {
+    name: "Apple Watch Series 11",
+    image: watchHealth,
+    basePrice: 399,
+    storages: ["41mm", "45mm"],
+    prices: { "41mm": 399, "45mm": 429 },
+    colors: [
+      { name: "Midnight", hex: "#1c1c1e" },
+      { name: "Starlight", hex: "#f5f5f0" },
+      { name: "Red", hex: "#ff3b30" },
+      { name: "Blue", hex: "#007aff" },
     ],
   },
 };
