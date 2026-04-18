@@ -6,8 +6,8 @@ function MacBook() {
   return (
     <div className="detail-page">
       <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
-      <div className="detail-hero" style={{ backgroundImage: `url(${macbook})`,margin:"0 10px 0 10px"  }}>
-        <h1>MacBook Pro</h1>
+      <div className="detail-hero" style={{ backgroundImage: `url(${macbook})`,margin:"0 10px 10px 10px" }}>
+       <h1 style={{ color: "rgba(191, 111, 26, 1)" }}>MacBook Pro</h1>
         <p>A work of smart</p>
       </div>
       <div className="detail-content">
