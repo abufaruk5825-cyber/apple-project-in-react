@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import iphon16pro from "../../assets/iphon16pro.jpg";
-import { products } from "../../data/products.js";
 import iphone16 from "../../assets/iphone16.jpg";
 import watch from "../../assets/watch_hero.jpg";
 import watchIcon from "../../assets/watch_logo_small_2x.png";
@@ -18,26 +17,6 @@ function Header() {
   return (
     <>
     <div>
-        <header>
-    <nav>
-        <ul className="nav-links" >
-        <li>  <a href="#"><i style={{fontSize: "20px"}} className="fa-brands fa-apple"></i></a></li>
-        <li><a href="https://www.apple.com/store">store</a></li>
-        <li><a href="https://www.apple.com/mac/">mac</a></li>
-        <li><a href="https://www.apple.com/ipad/">ipad</a></li>
-        <li><a href="https://www.apple.com/iphone/">iphone</a></li>
-        <li><a href="https://www.apple.com/watch/">watch</a></li>
-        <li><a href="https://www.apple.com/vision">vision</a></li>
-        <li><a href="https://www.apple.com/airpods/">airpad</a></li>
-        <li><a href="https://www.apple.com/tv/">tv & Home</a></li>
-        <li><a href="#">entertainment</a></li>
-        <li><a href="#">accessories</a></li>
-        <li><a href="#">Support</a></li>
-        <li className="nav-icons"><a href="#"><i className="fas fa-search"></i></a></li>
-        <li className="nav-icons"><a href="#"><i className="fa-solid fa-bag-shopping"></i></a></li>
-        </ul>
-    </nav>
-   </header>
     <p className="para-1">Order by 12/22 for free delivery of in‑stock items by 12/24. See checkout for specific delivery dates and options.<a href="https://applestore.com" className="shop">shop </a></p>
     </div>
 
@@ -62,7 +41,7 @@ function Header() {
         <div><h2>Hello,Apple intelligence</h2></div>
         <div>
             <button id="learn" onClick={() => navigate("/iphone16")}>learn more</button>
-            <button id="buy" onClick={() => navigate("/buy", { state: { product: products.iphone16 } })}>buy</button>
+            <button id="buy" onClick={() => navigate("/buy", { state: { productKey: "iphone16" } })}>buy</button>
         </div>
     </div>
 </section>
@@ -77,7 +56,7 @@ function Header() {
     <div><h3>thinstant classic</h3></div>
     <div className="sied">
         <button className="learn-more" onClick={() => navigate("/applewatch")}>learn more</button>
-        <button className="buy-1" onClick={() => navigate("/buy", { state: { product: products.applewatch } })}>buy</button>
+        <button className="buy-1" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
     </div>
     </div>
 </section> 
@@ -92,7 +71,7 @@ function Header() {
     <div><h2>incredibly power full</h2></div>
     <div>
         <button id="learn-more" onClick={() => navigate("/iphone16pro")}>learn more</button>
-        <button id="buy-1" onClick={() => navigate("/buy", { state: { product: products.iphone16pro } })}>buy</button>
+        <button id="buy-1" onClick={() => navigate("/buy", { state: { productKey: "iphone16pro" } })}>buy</button>
     </div>
     </div>
 </section>
@@ -103,7 +82,7 @@ function Header() {
     <div><h2>awork of smart</h2></div>
     <div>
         <button id="learn-more-1" onClick={() => navigate("/macbook")}>learn more</button>
-        <button id="buy-2" onClick={() => navigate("/buy", { state: { product: products.macbook } })}>buy</button>
+        <button id="buy-2" onClick={() => navigate("/buy", { state: { productKey: "macbook" } })}>buy</button>
     </div>
     </div>
 </section>
@@ -114,7 +93,7 @@ function Header() {
     <div><h2>samart time count</h2></div>
     <div>
         <button id="learn-more-2" onClick={() => navigate("/applewatch")}>learn more</button>
-        <button id="buy-3" onClick={() => navigate("/buy", { state: { product: products.applewatch } })}>buy</button>
+        <button id="buy-3" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
     </div>
     </div>
 </section>
@@ -129,7 +108,7 @@ function Header() {
         <h1>smart electronics</h1>
         <div className="butn-0">
             <button className="cr7" onClick={() => navigate("/iphone16")}>learn more</button>
-            <button className="cr7-1" onClick={() => navigate("/buy", { state: { product: products.iphone16 } })}>buy</button>
+            <button className="cr7-1" onClick={() => navigate("/buy", { state: { productKey: "iphone16" } })}>buy</button>
         </div>
     </div>
 </section>
@@ -144,7 +123,7 @@ function Header() {
          
      <div style={{padding:"20px 0 0 0"}}>
         <button className="btn-00" onClick={() => navigate("/tradein")}>learn more</button>
-        <button className="btn-01" onClick={() => navigate("/buy", { state: { product: products.tradein } })}>buy</button>
+        <button className="btn-01" onClick={() => navigate("/buy", { state: { productKey: "tradein" } })}>buy</button>
      </div>
     
      </div>
@@ -160,7 +139,7 @@ function Header() {
     <h2>watch your health</h2>
     <div>
         <button className="btn-s" onClick={() => navigate("/applewatch")}>learn more</button>
-        <button className="btn-z" >buy</button>
+        <button className="btn-z" onClick={() => navigate("/buy", { state: { productKey: "applewatch" } })}>buy</button>
     </div>
     </div>
    </section>

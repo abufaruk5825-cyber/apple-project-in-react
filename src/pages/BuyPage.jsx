@@ -1,20 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { products } from "../data/products.js";
+import { useAuth } from "../context/AuthContext";
+import { useCart } from "../context/CartContext";
 
 function BuyPage() {
   const navigate = useNavigate();
   const { state } = useLocation();
+  const { user } = useAuth();
+  const { addToCart } = useCart();
+
   const productKey = state?.productKey;
   const product = products[productKey];
 
   const [selectedStorage, setSelectedStorage] = useState(
-    products[productKey]?.storages?.[0] || ""
+    product?.storages?.[0] || ""
   );
   const [selectedColor, setSelectedColor] = useState(
-    products[productKey]?.colors?.[0]?.name || ""
+    product?.colors?.[0]?.name || ""
   );
   const [added, setAdded] = useState(false);
+
+  // After returning from login (fromAuth flag), auto-add to cart and go to cart
+  useEffect(() => {
+    if (state?.fromAuth && productKey && product) {
+      const price = product.prices?.[selectedStorage] || product.basePrice;
+      addToCart({
+        productKey,
+        name: product.name,
+        image: product.image,
+        storage: selectedStorage,
+        color: selectedColor,
+        price,
+      });
+      navigate("/cart");
+    }
+  }, []); // run once on mount after redirect back
 
   if (!product) {
     return (
@@ -28,8 +49,28 @@ function BuyPage() {
   const price = product.prices?.[selectedStorage] || product.basePrice;
 
   const handleAddToCart = () => {
+    if (!user) {
+      // Not logged in → go to login, pass return info
+      navigate("/login", {
+        state: {
+          returnTo: "/buy",
+          returnState: { productKey, selectedStorage, selectedColor, fromAuth: true },
+        },
+      });
+      return;
+    }
+    addToCart({
+      productKey,
+      name: product.name,
+      image: product.image,
+      storage: selectedStorage,
+      color: selectedColor,
+      price,
+    });
     setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
+    setTimeout(() => {
+      navigate("/cart");
+    }, 800);
   };
 
   return (
@@ -77,15 +118,17 @@ function BuyPage() {
             </div>
           )}
 
-          <button className="add-to-cart-btn" onClick={handleAddToCart}>
-            {added ? "✓ Added to Cart!" : "Add to Cart"}
-          </button>
-          <button className="checkout-btn" onClick={() => alert("Proceeding to checkout...")}>
-            Buy Now
+          <button
+            className="add-to-cart-btn"
+            onClick={handleAddToCart}
+            disabled={added}
+          >
+            {added ? "✓ Added!" : "Add to Cart"}
           </button>
         </div>
       </div>
     </div>
   );
 }
+
 export default BuyPage;
