@@ -11,11 +11,11 @@ import mobile from "../../assets/promo_iphone_tradein__bugw15ka691e_large_2x.jpg
 import card from "../../assets/card_logo.png";
 import link from "../../assets/hero_apple_watch_series_11__bdz1mml4dx6q_large_2x.jpg";
 import seid from "../../assets/iphone_17_pro__b6q7im87srv6_large_2x.jpg";
-function Header() {
+function Header({ addToCart, openProduct }) {
   return (
     <>
     <div>
-        <header>
+        <header className="sticky-nav">
     <nav>
         <ul className="nav-links" >
         <li>  <a href="#"><i style={{fontSize: "20px"}} className="fa-brands fa-apple"></i></a></li>
@@ -39,16 +39,13 @@ function Header() {
     </div>
 
 
- <section className="iphone"
-  style={{ backgroundImage: `url(${iphon16pro})` }}>
+ <section className="iphone" style={{ backgroundImage: `url(${iphon16pro})` }}>
  <div className="middle">
         <div><h1>iphone 16 pro</h1></div>
-        <div>
-        <h2>hello ,apple intelligence</h2>
-    </div>
+        <div><h2>hello ,apple intelligence</h2></div>
     <div>
-        <button className="btn">learn more</button>
-      <button className="buy">buy</button>
+        <button className="btn" onClick={() => openProduct("iphone16pro")}>learn more</button>
+        <button className="buy" onClick={() => addToCart({name: "iPhone 16 Pro", price: "From $999"})}>add to cart</button>
  </div> 
 </div>
 </section>
@@ -58,8 +55,8 @@ function Header() {
         <div><h1>iphone 16</h1></div>
         <div><h2>Hello,Apple intelligence</h2></div>
         <div>
-            <button id="learn">learn more</button>
-            <button id="buy">buy</button>
+            <button id="learn" onClick={() => openProduct("iphone16")}>learn more</button>
+            <button id="buy" onClick={() => addToCart({name: "iPhone 16", price: "From $799"})}>add to cart</button>
         </div>
     </div>
 </section>
@@ -73,8 +70,8 @@ function Header() {
         </div>
     <div><h3>thinstant classic</h3></div>
     <div className="sied">
-        <button className="learn-more">learn more</button>
-        <button className="buy-1">buy</button>
+        <button className="learn-more" onClick={() => openProduct("watch")}>learn more</button>
+        <button className="buy-1" onClick={() => addToCart({name: "Apple Watch", price: "From $399"})}>buy</button>
     </div>
     </div>
 </section> 
@@ -88,8 +85,8 @@ function Header() {
       <div><h1>iphone best</h1></div>  
     <div><h2>incredibly power full</h2></div>
     <div>
-        <button id="learn-more">learn more</button>
-        <button id="buy-1">buy</button>
+        <button id="learn-more" onClick={() => openProduct("appleCard")}>learn more</button>
+        <button id="buy-1" onClick={() => addToCart({name: "Apple Card", price: "No fees"})}>buy</button>
     </div>
     </div>
 </section>
@@ -99,8 +96,8 @@ function Header() {
       <div><h1>macbook pro</h1></div>  
     <div><h2>awork of smart</h2></div>
     <div>
-        <button id="learn-more-1">learn more</button>
-        <button id="buy-2">buy</button>
+        <button id="learn-more-1" onClick={() => openProduct("macbook")}>learn more</button>
+        <button id="buy-2" onClick={() => addToCart({name: "MacBook Pro", price: "From $1,599"})}>buy</button>
     </div>
     </div>
 </section>
@@ -110,8 +107,8 @@ function Header() {
       <div><h1>modern watch</h1></div>  
     <div><h2>samart time count</h2></div>
     <div>
-        <button id="learn-more-2">learn more</button>
-        <button id="buy-3">buy</button>
+        <button id="learn-more-2" onClick={() => openProduct("modernWatch")}>learn more</button>
+        <button id="buy-3" onClick={() => addToCart({name: "Apple Watch Unity", price: "From $499"})}>buy</button>
     </div>
     </div>
 </section>
@@ -125,8 +122,8 @@ function Header() {
     <div className="web">
         <h1>smart electronics</h1>
         <div className="butn-0">
-            <button className="cr7">learn more</button>
-            <button className="cr7-1">buy</button>
+            <button className="cr7" onClick={() => openProduct("airpods")}>learn more</button>
+            <button className="cr7-1" onClick={() => addToCart({name: "AirPods 4", price: "From $129"})}>buy</button>
         </div>
     </div>
 </section>
@@ -140,8 +137,8 @@ function Header() {
           <div><h3> iphone 13 or higher.</h3></div></div>
          
      <div style={{padding:"20px 0 0 0"}}>
-        <button className="btn-00">learn more</button>
-        <button className="btn-01">buy</button>
+        <button className="btn-00" onClick={() => openProduct("tradeIn")}>learn more</button>
+        <button className="btn-01" onClick={() => addToCart({name: "Trade In", price: "Up to $685"})}>buy</button>
      </div>
     
      </div>
@@ -156,8 +153,8 @@ function Header() {
     <h2>The ultimate way to</h2>
     <h2>watch your health</h2>
     <div>
-        <button className="btn-s" >learn more</button>
-        <button className="btn-z" >buy</button>
+        <button className="btn-s" onClick={() => openProduct("watchSeries")}>learn more</button>
+        <button className="btn-z" onClick={() => addToCart({name: "Apple Watch Series 11", price: "From $399"})}>buy</button>
     </div>
     </div>
    </section>

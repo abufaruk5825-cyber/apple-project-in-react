@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
     <footer style={{marginLeft:"20px"}}>
-    <p>“A modern Apple-inspired website built with React. It features a clean UI, smart  design, and detailed product showcase sections. The project focuses on  performance, simplicity, and a premium user experience similar to Apple Inc.’s official  website.”
+    <p>“A modern Apple-inspired website built with React. It features a clean UI, smart  design, smooth animations, and detailed product showcase sections. The project focuses on  performance, simplicity, and a premium user experience similar to Apple Inc.’s official  website.”
           Navigation bar with Apple-style links and icons
           Multiple hero sections with background images (iPhone 16 Pro, iPhone 16, Apple Watch,    MacBook, etc.)
       3-column promo section with flex layout
